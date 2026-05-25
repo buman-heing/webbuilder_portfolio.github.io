@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZISD | College Preparatory Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#101c2e",
+                    "surface-container-highest": "#e1e3e4",
+                    "secondary-fixed-dim": "#e9c176",
+                    "surface": "#f8f9fa",
+                    "on-error-container": "#93000a",
+                    "background": "#f8f9fa",
+                    "on-tertiary-fixed-variant": "#35485e",
+                    "secondary-fixed": "#ffdea5",
+                    "secondary-container": "#fed488",
+                    "on-secondary-fixed": "#261900",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#191c1d",
+                    "on-primary-container": "#79849b",
+                    "inverse-primary": "#bbc7df",
+                    "surface-variant": "#e1e3e4",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-dim": "#d9dadb",
+                    "on-primary-fixed-variant": "#3c475b",
+                    "on-secondary-container": "#785a1a",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "inverse-surface": "#2e3132",
+                    "on-background": "#191c1d",
+                    "surface-container-high": "#e7e8e9",
+                    "outline": "#75777d",
+                    "secondary": "#775a19",
+                    "primary": "#000000",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-container": "#72859e",
+                    "on-primary-fixed": "#101c2e",
+                    "primary-fixed": "#d7e3fc",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#000000",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#bbc7df",
+                    "on-surface-variant": "#44474c",
+                    "on-secondary": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "tertiary-container": "#071d31",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#071d31",
+                    "surface-tint": "#535f74",
+                    "tertiary-fixed": "#d1e4ff",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "tertiary-fixed-dim": "#b4c8e3",
+                    "outline-variant": "#c5c6cd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "margin-mobile": "24px",
+                    "margin-desktop": "64px",
+                    "gutter": "32px",
+                    "section-padding": "120px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "headline-sm": ["Libre Caslon Text"],
+                    "label-lg": ["Hanken Grotesk"],
+                    "headline-xl": ["Libre Caslon Text"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-sm": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.25", "fontWeight": "600"}],
+                    "headline-lg": ["36px", {"lineHeight": "1.25", "fontWeight": "600"}],
+                    "headline-sm": ["22px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 32px;
+        }
+        .hero-overlay {
+            background: linear-gradient(90deg, rgba(16, 28, 46, 0.95) 0%, rgba(16, 28, 46, 0.6) 50%, rgba(16, 28, 46, 0) 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto bg-surface dark:bg-primary-container border-b border-outline-variant dark:border-outline">
+  <div class="flex items-center gap-8">
+    <span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary tracking-tight">ZISD</span>
+    <div class="hidden md:flex gap-6">
+      <a class="font-label-lg text-label-lg text-primary dark:text-secondary-fixed border-b-2 border-secondary dark:border-secondary-fixed pb-1 hover:text-secondary transition-colors duration-300" href="#">Programs</a>
+      <a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-primary-container font-medium hover:text-secondary transition-colors duration-300" href="#">Counseling</a>
+      <a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-primary-container font-medium hover:text-secondary transition-colors duration-300" href="#">Test Prep</a>
+      <a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-primary-container font-medium hover:text-secondary transition-colors duration-300" href="#">Admissions</a>
+      <a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-primary-container font-medium hover:text-secondary transition-colors duration-300" href="#">News</a>
+      <a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-primary-container font-medium hover:text-secondary transition-colors duration-300" href="#">About</a>
+    </div>
+  </div>
+  <div class="flex gap-4">
+    <button class="hidden lg:block font-label-lg text-label-lg px-6 py-2 border border-outline hover:bg-surface-container transition-all active:scale-95">Student Portal</button>
+    <button class="bg-primary-container text-on-primary font-label-lg text-label-lg px-8 py-2 border border-secondary-fixed-dim hover:bg-secondary transition-all active:scale-95">Apply Now</button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center pt-20 overflow-hidden bg-primary-container">
+  <div class="absolute inset-0 z-0">
+    <img class="w-full h-full object-cover opacity-60" alt="Students studying at ZISD College Prep in Lusaka, Zambia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX7lC5U3uxVIrQvRoDG33GqTFUiTD1YCM1aQ4Tx58rC3hJeVM2EYYFuii4PtCEs-HQOD9hkRRSZ40AvGpMpynHD3522thrQjly20gmr6XlDxRGicakqp3N-bW8vHI8olHmxEsmBqNcAtyUHiM066DN7GJIGayCw-Q9Bf7BLSRHlfGCg6Gu_G6FgQV3XZfLjqC1qgvK7bVRKjs2rOCRdIi5wgIyHXwTUqIsiPu9phWpdy99eBzw5dwEkFKWr4sDa2R_x-qyKrWPeP8"/>
+    <div class="hero-overlay absolute inset-0"></div>
+  </div>
+  <div class="relative z-10 px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+    <div class="max-w-3xl">
+      <span class="block font-label-lg text-label-lg text-secondary-fixed uppercase tracking-[0.2em] mb-6">Zambia's Premier College Prep — Lusaka</span>
+      <h1 class="font-headline-xl text-headline-xl text-white mb-8 leading-tight">Opening Doors to the World's Best Universities</h1>
+      <p class="font-body-lg text-body-lg text-on-primary-container mb-12 max-w-xl">ZISD is Zambia's leading SAT tuition and college preparatory institution — a Kaplan Certified Provider helping ambitious Zambian students earn places and scholarships at top universities across the US, Canada, and beyond.</p>
+      <div class="flex flex-wrap gap-6">
+        <button class="bg-secondary-fixed text-on-secondary-fixed px-10 py-4 font-label-lg text-label-lg border border-secondary transition-all hover:brightness-110 active:scale-95">OUR PROGRAMS</button>
+        <button class="bg-transparent text-white px-10 py-4 font-label-lg text-label-lg border border-white hover:bg-white/10 transition-all active:scale-95">APPLY NOW</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Key Metrics -->
+<section class="bg-surface-container-low py-16">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+      <div class="space-y-2">
+        <div class="font-headline-xl text-headline-xl text-primary">1st</div>
+        <div class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-widest">Kaplan Certified Centre in Southern Africa</div>
+      </div>
+      <div class="space-y-2 border-y md:border-y-0 md:border-x border-outline-variant py-8 md:py-0">
+        <div class="font-headline-xl text-headline-xl text-primary">US & Canada</div>
+        <div class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-widest">Full-Tuition Scholarships Secured</div>
+      </div>
+      <div class="space-y-2">
+        <div class="font-headline-xl text-headline-xl text-primary">Holistic</div>
+        <div class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-widest">Academic & Application Guidance</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Programs & Services -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+  <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+    <div class="max-w-2xl">
+      <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Our Academic Foundations</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant">From test preparation to full application support, our bespoke programmes are built around each student's unique goals and the demands of global admissions.</p>
+    </div>
+    <a class="text-secondary font-label-lg text-label-lg underline underline-offset-8 hover:text-primary transition-colors" href="#">VIEW ALL SERVICES</a>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+
+    <!-- Card 1 -->
+    <div class="group border border-outline-variant p-10 hover:border-secondary transition-all duration-500 relative bg-surface">
+      <div class="w-12 h-[2px] bg-secondary mb-8 group-hover:w-full transition-all duration-500"></div>
+      <span class="material-symbols-outlined text-4xl text-primary mb-6">account_balance</span>
+      <h3 class="font-headline-sm text-headline-sm text-primary mb-4">College Counseling</h3>
+      <p class="text-on-surface-variant mb-8">Personalised application strategies for students pursuing top-tier universities in the US, Canada, and UK. We guide every step — from school selection to financial aid and scholarship applications.</p>
+      <a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-secondary group-hover:gap-4 transition-all" href="#">
+        LEARN MORE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+      </a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="group border border-outline-variant p-10 hover:border-secondary transition-all duration-500 relative bg-surface">
+      <div class="w-12 h-[2px] bg-secondary mb-8 group-hover:w-full transition-all duration-500"></div>
+      <span class="material-symbols-outlined text-4xl text-primary mb-6">edit_note</span>
+      <h3 class="font-headline-sm text-headline-sm text-primary mb-4">SAT Preparation</h3>
+      <p class="text-on-surface-variant mb-8">As Zambia's only Kaplan Certified Education Provider, we deliver rigorous 6-week and 10-week SAT prep courses — online or on-site — with unlimited access to practice resources and personalised diagnostic tracking.</p>
+      <a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-secondary group-hover:gap-4 transition-all" href="#">
+        LEARN MORE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+      </a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="group border border-outline-variant p-10 hover:border-secondary transition-all duration-500 relative bg-surface">
+      <div class="w-12 h-[2px] bg-secondary mb-8 group-hover:w-full transition-all duration-500"></div>
+      <span class="material-symbols-outlined text-4xl text-primary mb-6">rocket_launch</span>
+      <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Extracurricular Development</h3>
+      <p class="text-on-surface-variant mb-8">We expose students to activities beyond academics — including the Zambia Robotics programme — helping them build the diverse profiles that make strong international university candidates.</p>
+      <a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-secondary group-hover:gap-4 transition-all" href="#">
+        LEARN MORE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- About ZISD -->
+<section class="py-section-padding bg-primary-container text-white overflow-hidden">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div class="relative">
+        <img class="w-full aspect-[4/5] object-cover relative z-10 grayscale hover:grayscale-0 transition-all duration-1000" alt="ZISD students in Lusaka, Zambia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClMUg9tk8NPQUTm0IZ32ePGm4faQaCyV65p6axzHlhuU9tdViBUJiJoPoVLMk-vg7V_S_s-7Zud_WIQhP3KJ7UnFqKtKP_15pv_Ci8_7S1NPrgHG7RTsmfYDoABWp5nKRkd8pro41ffNC5iN5UFwmVK9cZYX7e8yxrvihO_NaGwiupbjFhJJO62ih24LijzDhs59G6GcCuGLmbQRTUpOpYKrfFhVTC_pqCebKOC8jSLKSSsRnJHKJh1Pu-1w22E72dLg0d3_5YDMY"/>
+        <div class="absolute -bottom-10 -right-10 w-full h-full border-[12px] border-secondary-fixed/20 z-0"></div>
+      </div>
+      <div class="space-y-8">
+        <span class="font-label-lg text-label-lg text-secondary-fixed-dim uppercase tracking-[0.3em]">Our Mission</span>
+        <h2 class="font-headline-lg text-headline-lg leading-tight">Zambia's Gateway to World-Class Higher Education</h2>
+        <p class="font-body-lg text-body-lg text-on-primary-container">ZISD — the Zambian Institute for Sustainable Development — is a youth-led NGO based in Lusaka. We believe that poverty is not only physical but mental, and that every brilliant Zambian student deserves a path to the world's best universities, regardless of their background.</p>
+        <p class="font-body-lg text-body-lg text-on-primary-container">As the first Kaplan Certified Education Provider in Southern Africa and third on the continent, our alumni have gone on to study at institutions including Penn State, Harvard, and leading universities across the US and Canada — many on full-tuition scholarships.</p>
+        <div class="pt-6">
+          <button class="flex items-center gap-4 group">
+            <span class="w-12 h-12 rounded-full border border-secondary-fixed flex items-center justify-center group-hover:bg-secondary-fixed transition-all">
+              <span class="material-symbols-outlined text-secondary-fixed group-hover:text-primary-container">play_arrow</span>
+            </span>
+            <span class="font-label-lg text-label-lg uppercase tracking-widest text-secondary-fixed">Hear from our Students</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- News & Insights -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+  <div class="text-center mb-20">
+    <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Latest Insights</h2>
+    <div class="w-20 h-1 bg-secondary mx-auto"></div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+
+    <article class="group cursor-pointer">
+      <div class="overflow-hidden mb-6 aspect-video">
+        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="SAT preparation resources" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrImwtZMDWIpfw_DXRK-_ca2lKyoKC2INC25XnjYa80a9VhnfNzNP_2gpma9abkLOLxpy1oHl2bjMEFV1TuLR2r1qmxdLo4QQM-msWY2wieNDxgrZ0L11Hb3bEuTV8T5XL27e-lvcX8Y2lYimgd2klqMrXRcqV6JCdLic62jw55iZOlR4ez6Tbgis8Jl1jyxOmk3KUOWOO1_l9iDea6XsLb1mgPRlYvYmNKJepWKr70TO-MWzANInFtBVWGEC3WUhfkng5ZWjYXiY"/>
+      </div>
+      <div class="space-y-3">
+        <span class="font-label-sm text-label-sm text-on-secondary-container bg-secondary-container px-3 py-1">SAT PREP</span>
+        <h4 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">What the Digital SAT Means for Zambian Students</h4>
+        <p class="text-on-surface-variant line-clamp-2">Understanding the shift to the digital SAT format and how ZISD's Kaplan-certified curriculum keeps students ahead of the changes.</p>
+      </div>
+    </article>
+
+    <article class="group cursor-pointer">
+      <div class="overflow-hidden mb-6 aspect-video">
+        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="University scholarship guidance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzcofJ7i0F_zsxrzwiCr2PTCiLdchc3zCst8qNXRPKh_oA75kLLcpwpYDX5DmMbbGj78dAanexEoV5nK5C-zBhiF0resTcz-TNMNkDKLdjfISc7rsJU4ozxre6WPdcSELdmsxEiAL2KNY50vYiC_yDYovSp9M7n1bGee7XtBVmBgB8mv0tyD4em3AThU6z030S63Nrx0Q35mXwLnUpbOmzv5ZqBsXVRdVuwnLaYimtVBiYbRqKEJ0nZon1k"/>
+      </div>
+      <div class="space-y-3">
+        <span class="font-label-sm text-label-sm text-on-secondary-container bg-secondary-container px-3 py-1">SCHOLARSHIPS</span>
+        <h4 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">Full-Tuition Scholarships: A Guide for Zambian Applicants</h4>
+        <p class="text-on-surface-variant line-clamp-2">Hundreds of US and Canadian universities offer full scholarships based on merit, need, or sport — here's how ZISD helps you secure one.</p>
+      </div>
+    </article>
+
+    <article class="group cursor-pointer">
+      <div class="overflow-hidden mb-6 aspect-video">
+        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Zambia Robotics programme students" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX3YfFAjOJh9Kp4HdTC5VdEqcSumVnQYE4SNURiaSweC7eBWX1nD92ou_e8bnb_BmkKLzdFVteWZdcuUrNSS62pR1TDiRQtoLzXyyeD20HGoVfmSVRjFgGeEqkIAGgJum_4pyZW1GZroGZk6xsCaSgMi9zUVUdvNMyrKlByZ-Qs4zg_n634JNQnaj1FkSMdQFeUJsmJl0Kh9tpi-I_-jiiGzX7SNL2O_nm9tDJ8alDkfI2mMTx1-HYYivguSYvV1HsATdbJxgGKRA"/>
+      </div>
+      <div class="space-y-3">
+        <span class="font-label-sm text-label-sm text-on-secondary-container bg-secondary-container px-3 py-1">ALUMNI SPOTLIGHT</span>
+        <h4 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">From Lusaka to Penn State: Thokozile's Journey</h4>
+        <p class="text-on-surface-variant line-clamp-2">ZISD alumna Thokozile Mwanza shares her story of studying Actuarial Science at Penn State — and the preparation that made it possible.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="mb-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+  <div class="bg-surface-container-highest p-16 md:p-24 flex flex-col md:flex-row items-center justify-between gap-12 border-t-8 border-secondary">
+    <div class="max-w-xl text-center md:text-left">
+      <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Begin Your Global Academic Journey</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant">Join Zambia's leading college prep community. Whether you're a high school student or a school leaver, ZISD has a pathway designed to get you to the university of your dreams.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-6">
+      <button class="bg-primary-container text-on-primary px-12 py-5 font-label-lg text-label-lg border border-primary transition-all hover:bg-primary active:scale-95">REQUEST A CONSULTATION</button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Shell -->
+<footer class="w-full py-section-padding px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-primary-container dark:bg-tertiary-container text-on-primary dark:text-on-tertiary">
+  <div class="col-span-1 md:col-span-1 space-y-8">
+    <span class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">ZISD</span>
+    <p class="text-on-primary-container dark:text-on-tertiary-container text-body-md font-body-md">Zambian Institute for Sustainable Development — Lusaka's leading SAT tuition and college preparatory institution, opening doors to the world's best universities.</p>
+    <div class="flex gap-4">
+      <a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:text-secondary-fixed transition-colors" href="https://zisd.org" target="_blank">
+        <span class="material-symbols-outlined text-sm">public</span>
+      </a>
+      <a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:text-secondary-fixed transition-colors" href="https://www.facebook.com/zisd10101nomaone" target="_blank">
+        <span class="material-symbols-outlined text-sm">link</span>
+      </a>
+      <a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:text-secondary-fixed transition-colors" href="mailto:zisdinfo@gmail.com">
+        <span class="material-symbols-outlined text-sm">mail</span>
+      </a>
+    </div>
+  </div>
+  <div class="space-y-6">
+    <h5 class="font-label-lg text-label-lg uppercase tracking-widest text-secondary-fixed">Resources</h5>
+    <ul class="space-y-4">
+      <li><a class="text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors underline" href="#">Alumni Stories</a></li>
+      <li><a class="text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors underline" href="#">SAT Calendar & Dates</a></li>
+      <li><a class="text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors underline" href="#">ZISD Events</a></li>
+    </ul>
+  </div>
+  <div class="space-y-6">
+    <h5 class="font-label-lg text-label-lg uppercase tracking-widest text-secondary-fixed">Quick Links</h5>
+    <ul class="space-y-4">
+      <li><a class="text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors underline" href="#">Zambia Robotics</a></li>
+      <li><a class="text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors underline" href="#">SAT Prep Courses</a></li>
+      <li><a class="text-on-primary-container dark:text-on-tertiary-container hover:text-secondary-fixed transition-colors underline" href="#">Scholarship Guide</a></li>
+    </ul>
+  </div>
+  <div class="space-y-6">
+    <h5 class="font-label-lg text-label-lg uppercase tracking-widest text-secondary-fixed">Contact</h5>
+    <div class="space-y-4 text-on-primary-container dark:text-on-tertiary-container text-body-md">
+      <p>Lusaka, Zambia</p>
+      <p>+260 977 610065</p>
+      <p>zisdinfo@gmail.com</p>
+      <p>zisd.org</p>
+    </div>
+  </div>
+  <div class="col-span-1 md:col-span-4 pt-12 border-t border-outline-variant/30 text-center text-on-primary-container dark:text-on-tertiary-container text-label-sm">
+    © 2025 ZISD College Preparatory — Zambian Institute for Sustainable Development. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('button, a').forEach(elem => {
+    elem.addEventListener('mouseenter', () => {});
+  });
+</script>
+</body></html>
